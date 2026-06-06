@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studioform — Concept Homepage</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: colum;
+      background: #000;
+    }
+
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+
+  nav a:hover {
+    opacity: 1;
+  }
+
+  /* Hero section */
+  .hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    background-image: url("background");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1px);
+  }
+
+  .hero h1,
+  .hero p {
+    postion: relative;
+    z-index: 2;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .hero p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#">Work</a>
+    <a href="#">Index</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Studioform®</h1>
+    <p>
+      We believe design is a dialogue of clarity and expression.
+      Our philosophy values adaptive systems, resonant visuals,
+      and ideas that endure across cultures and time.
+    </p>
+  </section>
+
+</body>
+</html>
