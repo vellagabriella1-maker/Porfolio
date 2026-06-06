@@ -37,34 +37,27 @@
       opacity: 1;
     }
 
-    /* Hero section */
-    .hero {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      background-image: url("Background.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(1px);
-    }
+    .one  { background-image: url('Background1.png'); }
+    .two  { background-image: url('Background2.png'); height: 101vh; }
+    .three { background-image: url('Background3.png'); height: 101vh; }
 
     /* Studioform top-left */
     .hero h1 {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-      z-index: 2;
-      font-size: 3rem;
-      margin: 0;
-      font-weight: 600;
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        color: #fffcf2;
+        font-size: 40px;
+        letter-spacing: 2px;
     }
 
     /* Paragraph bottom-left */
